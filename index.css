@@ -1,6 +1,9 @@
 * {
   box-sizing: inherit;
 }
+body, html{
+  box-sizing: inherit;
+}
 body {
   margin: 0px;
   width: 100%;
@@ -44,6 +47,10 @@ a {
   display: inline-block;
   text-decoration-skip-ink: auto;
 }
+
+/**
+Nav
+*/
 .layout-class {
   display: flex;
   flex-direction: column;
@@ -102,18 +109,18 @@ a {
   counter-increment: item 1;
   font-size: var(--fz-xs);
 }
-a{
+a {
   display: inline-block;
-    text-decoration: none;
-    text-decoration-skip-ink: auto;
-    color: inherit;
-    position: relative;
-    transition: var(--transition);
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  color: inherit;
+  position: relative;
+  transition: var(--transition);
 }
-.nav.styled-links ol li a{
+.nav.styled-links ol li a {
   padding: 10px;
 }
-.nav.styled-links ol li a::before{
+.nav.styled-links ol li a::before {
   content: "0" counter(item) ".";
   margin-right: 5px;
   color: var(--green);
@@ -140,6 +147,82 @@ a{
   height: 60px;
 }
 
+/**
+* Left Nav
+*/
+.side-styled-element-left {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: 40px;
+  right: auto;
+  z-index: 10;
+  color: var(--light-slate);
+}
+.social-linkes-styled-sidebar {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.social-linkes-styled-sidebar::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: var(--light-slate);
+}
+.social-linkes-styled-sidebar li a:hover,
+.social-linkes-styled-sidebar li a:focus {
+  transform: translateY(-3px);
+  /* color: var(--green); */
+  filter: hue-rotate(320deg);
+}
+.social-linkes-styled-sidebar li a {
+  padding: 10px;
+}
+.social-linkes-styled-sidebar li:last-of-type {
+  margin-bottom: 20px;
+}
+
+.side-styled-element-right {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: auto;
+  right: 40px;
+  z-index: 10;
+  color: var(--light-slate);
+}
+.email-styled-element-wrapper {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+}
+.side-styled-element-right::after{
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: var(--light-slate);
+}
+.side-styled-element-right a{
+  margin: 20px auto;
+    padding: 10px;
+    font-family: var(--font-mono);
+    font-size: var(--fz-xxs);
+    line-height: var(--fz-lg);
+    letter-spacing: 0.1em;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
 /**
 * Colors
 */
