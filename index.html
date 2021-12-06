@@ -28,25 +28,26 @@
                       class="facedown-enter-done"
                       style="transition-delay: 0ms"
                     >
-                      <a href="/#about"> About </a>
+                      <a href="#about"> About </a>
                     </li>
-                    <li
-                      class="facedown-enter-done"
-                      style="transition-delay: 100ms"
-                    >
-                      <a href="/#jobs"> Experience </a>
-                    </li>
+                   
                     <li
                       class="facedown-enter-done"
                       style="transition-delay: 200ms"
                     >
-                      <a href="/#projects"> Work </a>
+                      <a href="#projects"> Work </a>
                     </li>
+                    <li
+                    class="facedown-enter-done"
+                    style="transition-delay: 100ms"
+                  >
+                    <a href="#smallprojects"> Other Projects </a>
+                  </li>
                     <li
                       class="facedown-enter-done"
                       style="transition-delay: 300ms"
                     >
-                      <a href="/#projects"> Contact </a>
+                      <a href="#contact"> Contact </a>
                     </li>
                     <li
                       class="facedown-enter-done"
@@ -54,7 +55,7 @@
                     >
                       <a
                         class="resume-button"
-                        href="/#resume.pdf"
+                        href="./Bidisha_Das__Resume.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -159,6 +160,7 @@
                 </section>
                 <section
                   id="about"
+                  name="about"
                   class="about-styled-about-section"
                   data-sr-id="0"
                 >
@@ -671,7 +673,7 @@
                     </li>
                   </ul>
                 </section>
-                <section class="other-projects">
+                <section class="other-projects" id="smallprojects">
                   <h2
                     style="
                       visibility: visible;
@@ -737,7 +739,7 @@
                             <div class="folder">
                               <img
                                 src="./icons8-folder.svg"
-                                style="width: 40px; height: 40px; filter: unset"
+                                style="width: 25px; height: 25px; filter: unset"
                               />
                             </div>
                             <div class="project-links">
@@ -765,13 +767,14 @@
                               href="https://officialbidisha.github.io/React-Task-Reminder/"
                               target="_blank"
                               rel="noopener noreferrer"
+                              class="other-project-a"
                             >
                               A Task Reminder using React, that provides a
                               reminder to the user based on the tasks listed.
                             </a>
                           </h3>
                           <div class="project-description">
-                            <p>
+                            <p class="description-project">
                               Building a website that provides a reminder for
                               listed items from the user. The user can add an
                               item, delete an item and also toggle reminder.
@@ -824,16 +827,16 @@
                             <div class="folder">
                               <img
                                 src="./icons8-folder.svg"
-                                style="width: 40px; height: 40px; filter: unset"
+                                style="width: 25px; height: 25px; filter: unset"
                               />
                             </div>
                             <div class="project-links">
                               <a
                                 href="https://github.com/officialbidisha/Assignment-Submission-Portal"
                                 aria-label="Extenal link"
-                                class="external"
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                class="external"
                               >
                                 <img
                                   src="./icons8-share-3.svg"
@@ -852,13 +855,14 @@
                               href="https://github.com/officialbidisha/Assignment-Submission-Portal"
                               target="_blank"
                               rel="noopener noreferrer"
+                              class="other-project-a"
                             >
                               Assignment Submission Portal for Online Assignment
                               Assessment
                             </a>
                           </h3>
                           <div class="project-description">
-                            <p>
+                            <p class="description-project">
                               A web application used to submit assignments, view
                               notice and see study materials. Helps in
                               maintaining distant learning and periodical
@@ -912,7 +916,7 @@
                             <div class="folder">
                               <img
                                 src="./icons8-folder.svg"
-                                style="width: 40px; height: 40px; filter: unset"
+                                style="width: 25px; height: 25px; filter: unset"
                               />
                             </div>
                             <div class="project-links">
@@ -940,13 +944,14 @@
                               href="https://github.com/officialbidisha/Library-Management-System"
                               target="_blank"
                               rel="noopener noreferrer"
+                              class="other-project-a"
                             >
                               Library Management System for Educational
                               Institution
                             </a>
                           </h3>
                           <div class="project-description">
-                            <p>
+                            <p class="description-project">
                               Maintaining education organisation level library
                               management system that accomodates separate
                               accessibility for admin and students.
@@ -965,6 +970,52 @@
                       </div>
                     </li>
                   </ul>
+                </section>
+                <section
+                  id="contact"
+                  class="styled-contact-section"
+                  style="
+                    visibility: visible;
+                    opacity: 1;
+                    transform: matrix3d(
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1
+                    );
+                    transition: opacity 0.5s
+                        cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s,
+                      transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+                  "
+                >
+                  <h2 class="numbered-heading overline">Lastly!</h2>
+                  <h2 class="title">Get In Touch</h2>
+                  <p style="font-size: 18px;">
+                    I'm available on social networking sites and mostly active
+                    on Gmail, or LinkedIn. Whether it is just a question, or want to
+                    collaborate with me, or hire me, kindly drop me an email. I'll revert
+                    back to you as soon as possible.
+                  </p>
+                  <a
+                    class="email-link"
+                    href="mailto:officialbidisha1@gmail.com"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Say Hello
+                  </a>
                 </section>
               </main>
             </div>

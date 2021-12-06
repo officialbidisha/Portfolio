@@ -1,6 +1,17 @@
 * {
   box-sizing: inherit;
 }
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--dark-slate);
+  border: 3px solid var(--navy);
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: var(--navy);
+}
 body, html{
   box-sizing: inherit;
 }
@@ -341,7 +352,7 @@ Body
 }
 .numbered-heading::before {
   position: relative;
-  bottom: 4px;
+  bottom: -4px;
   counter-increment: section 1;
   content: "0" counter(section) ".";
   margin-right: 10px;
@@ -354,7 +365,7 @@ Body
   content: "";
   display: block;
   position: relative;
-  top: -5px;
+  top: 1px;
   width: 300px;
   height: 1px;
   margin-left: 20px;
@@ -746,10 +757,67 @@ p:last-of-type {
   line-height: 1.75;
  }
 
+ .other-project-a{
+  font-size: 18px;
+  margin-bottom: 20px;
+ }
+
+ .project-description .description-project{
+  font-size: 14px;
+ }
+
+ .project-inner:hover, .project-inner:active{
+  transform: translateY(-4px);
+ }
+
+ .facedown-enter-done{
+   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+ }
+
 /*
 * Other projects end
 */
 
+/*
+* Get in touch
+*/
+.styled-contact-section{
+  max-width: 600px;
+  margin: 0px auto 100px;
+  text-align: center;
+}
+.styled-contact-section .overline{
+  display: block;
+  margin-bottom: 20px;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: var(--fz-md);
+  font-weight: 400;
+}
+.styled-contact-section .overline::before{
+  bottom: 0px;
+  font-size: var(--fz-sm);
+}
+.styled-contact-section .overline::after{
+  content: unset;
+}
+.styled-contact-section .title{
+  font-size: clamp(40px, 5vw, 60px);
+}
+.styled-contact-section .email-link{
+  color: var(--green);
+  background-color: transparent;
+  border: 1px solid var(--green);
+  border-radius: var(--border-radius);
+  padding: 1.25rem 1.75rem;
+  font-size: var(--fz-sm);
+  font-family: var(--font-mono);
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-top: 50px;
+}
 /**
 * Colors
 */
