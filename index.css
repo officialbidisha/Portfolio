@@ -629,6 +629,11 @@ p:last-of-type {
   mix-blend-mode: multiply;
   filter: grayscale(100%) contrast(1) brightness(90%);
 }
+
+.featured-styles-project-1 a:hover, .featured-styles-project-1 .project-image a:focus{
+  background: transparent;
+  outline: 0px;
+}
 /**
 *
 */
